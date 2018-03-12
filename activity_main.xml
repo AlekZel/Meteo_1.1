@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zelenkin.animation.MainActivity">
+
+    <LinearLayout
+        android:layout_width="177dp"
+        android:layout_height="499dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сухой термометр"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="36dp" />
+
+        <EditText
+            android:id="@+id/kf1"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смоченный термометр"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="116dp" />
+
+        <EditText
+            android:id="@+id/kf2"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Минимальный термометр (спирт)"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <EditText
+            android:id="@+id/kf3"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:text="Минимальный термометр (штифт)"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="257dp" />
+
+        <EditText
+            android:id="@+id/kf4"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:text="Максимальный термометр (отсчёт)"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="328dp" />
+
+        <EditText
+            android:id="@+id/kf5"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:selectAllOnFocus="false"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:text="Максимальный термометр (после встряхивания)"
+            android:textSize="12sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="406dp" />
+
+        <EditText
+            android:id="@+id/kf6"
+            style="@android:style/Widget.DeviceDefault.AutoCompleteTextView"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <Button
+
+            android:id="@+id/kno"
+            style="@android:style/Widget.Material.Light.Button.Inset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Рассчитать" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="71dp"
+        android:layout_height="471dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Поправка" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="412dp"
+
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="95dp"
+        android:layout_height="472dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/isprvel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Испр. вел." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/result2"
+            android:layout_width="match_parent"
+            android:layout_height="411dp"
+
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
